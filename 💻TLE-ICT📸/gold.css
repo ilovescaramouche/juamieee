@@ -1,0 +1,13 @@
+a {font-family: Arial;
+font-size: 15px; fontweight: bold;
+color: red; lineheight: 22px;}
+
+a:link {color: red;}
+
+a:visited
+{color: black;}
+
+a:hover
+{color: green;}
+
+a:active {color: blue;}
