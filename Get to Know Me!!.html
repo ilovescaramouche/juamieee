@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+nal<!DOCTYPE html>
 
 <html>
 
@@ -12,12 +12,9 @@
 .slide img {width: 300px; height:400px; box-shadow: 10px 10px 3px SaddleBrown;}
 
 button {position: absolute; top: 40%; transform: translateY(-50%); background-color: LightGoldenRodYellow; border: none; font-size: 36px; cursor: pointer; padding: 10px; border-radius: 25%; color: DarkRed;}
-  <script>
-  function plusSlides(n) {
-    console.log("Slide changed by", n);}
-
 .prev { left: -50px; }
 .next { right: -50px; }
+}
 
 a {color: SaddleBrown; text-decoration: none; font-size: 36px; transition: all 0.3s ease;}
 
@@ -32,9 +29,9 @@ a:hover {transform: scale(1.2); color: Peru; text-shadow: 2px 2px 3px Peru;}
 <p style="background-color: SaddleBrown; font-size: 36px; font-family: Georgia; text-align: justify; border: 5px double DarkRed; color:LightGoldenRodYellow; padding: 15px;">
 
 E-Portfolio 
-<a href="file:///C:/Users/juana/Downloads/AP%20E-Portfolio.html" target="_blank" style="font-size: 30px; color: Peru; float: right; margin-right: 20px;"> Araling Panlipunan </a>
-<a href="file:///C:/Users/juana/Downloads/ICT%20E-Portfolio.html"   target="_blank" style="font-size: 30px; color: Peru; float: right; margin-right: 20px;"> TLE/ICT </a> 
-<a href="file:///C:/Users/juana/Downloads/Get%20to%20Know%20Me!!.html"   target="_blank" style="font-size: 30px; color: Peru; float: right; margin-right: 20px;"> Main </a> 
+<a href="AP E-Portfolio.html.html" target="_blank" style="font-size: 30px; color: Peru; float: right; margin-right: 20px;"> Araling Panlipunan </a>
+<a href="ICT E-Portfolio.html" target="_blank" style="font-size: 30px; color: Peru; float: right; margin-right: 20px;"> TLE/ICT </a>
+<a href="Get to Know Me!!.html" target="_blank" style="font-size: 30px; color: Peru; float: right; margin-right: 20px;"> Main </a>
 
 </p>
 
@@ -91,11 +88,24 @@ I am Juan Ameilia I. Dandan but I usually go by my nickname "Juamie". My birthda
 </div>
 
 <script>
-let slideIndex = 0; showSlides();
+let slideIndex = 1;
+showSlides();
 
-function showSlides() {let slides = document.getElementsByClassName("slide"); for (let i = 0; i < slides.length; i++) {slides[i].style.display = "none";} slideIndex++; if (slideIndex > slides.length) { slideIndex = 1 } slides[slideIndex-1].style.display = "block";}
+function showSlides() {
+  let slides = document.getElementsByClassName("slide");
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";  
+}
 
-function plusSlides(n) {slideIndex += n - 1; showSlides();}
+setInterval(() => {plusSlides(1)}, 3000);
+
+function plusSlides(n) {
+  slideIndex += n;
+  showSlides();
+}
 </script>
 
 <br>
@@ -141,7 +151,7 @@ function plusSlides(n) {slideIndex += n - 1; showSlides();}
 If I will be honest, I consider almost everyone my friend. I value them as much as I value my family. They are one of my sources of light and joy when challenges grow stronger. They are my inspiration, my role models, and the ones I can count on.
 </p>
 
-<img img src="courage25.jpg" alt="✮⋆ Courage '25 ⋆✮" width="500px" height="400px" style="border: 15px double Chocolate; position: absolute; left: 100px;">
+<img src="courage25.jpg" alt="✮⋆ Courage '25 ⋆✮" width="500px" height="400px" style="border: 15px double Chocolate; position: absolute; left: 100px;">
 
 <img src="family25.jpg" alt="✮⋆ Family '26 ⋆✮" width="500px" height="400px" style="border: 15px double SaddleBrown; position: absolute; left: 450px; top: 1450px;">
 
